@@ -1,6 +1,6 @@
 {
   "name": "ng2-gravatar-directive",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "Angular2 gravatar directive",
   "main": "src/gravatar.js",
   "typings": "src/gravatar.d.ts",
@@ -17,10 +17,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tb/ng2-gravatar"
+    "url": "https://github.com/garethbradley/ng2-gravatar"
   },
   "bugs": {
-    "url": "https://github.com/tb/ng2-gravatar/issues"
+    "url": "https://github.com/garethbradley/ng2-gravatar/issues"
   },
   "dependencies": {
     "md5": "^2.1.0"
