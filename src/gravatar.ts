@@ -1,4 +1,4 @@
-import {Directive, ElementRef, Input, OnChanges} from '@angular/core';
+import {Directive, ElementRef, Input, OnChanges, SimpleChanges} from '@angular/core';
 let md5 = require('md5');
 
 @Directive({
