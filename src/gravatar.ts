@@ -1,17 +1,26 @@
-import {Directive, ElementRef, Input} from '@angular/core';
+import {Directive, ElementRef, Input, OnChanges} from '@angular/core';
 let md5 = require('md5');
 
 @Directive({
   selector: '[gravatar]'
 })
-export class Gravatar {
+export class Gravatar implements OnChanges {
   @Input('email') email: string;
   @Input('size') size: number = 16;
   @Input('fallback') fallback: string = 'mm';
 
   constructor(private elementRef: ElementRef) {}
 
-  ngOnInit() {
+  requestGravatar() {
+    console.log('Requesting Gravatar: ', this.email, md5(this.email));
     this.elementRef.nativeElement.src = `//www.gravatar.com/avatar/${md5(this.email)}?s=${this.size}&d=${this.fallback}`;
+  }
+   
+  ngOnInit() {
+    requestGravatar();
+  }
+   
+  ngOnChanges(changes) {
+    requestGravatar();
   }
 }
