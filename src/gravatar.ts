@@ -17,10 +17,10 @@ export class Gravatar implements OnChanges {
   }
    
   ngOnInit() {
-    requestGravatar();
+    this.requestGravatar();
   }
    
-  ngOnChanges(changes) {
-    requestGravatar();
+  ngOnChanges(SimpleChanges: changes) {
+    this.requestGravatar();
   }
 }
