@@ -5,7 +5,7 @@
   "main": "src/gravatar.js",
   "typings": "src/gravatar.d.ts",
   "scripts": {
-    "build": "typings install && tsc"
+    "build": "typings install && ntsc"
   },
   "keywords": [
     "angular2",
