@@ -36,9 +36,5 @@
     "typescript": "^1.8.10",
     "typings": "^1.0.4",
     "zone.js": "^0.6.21"
-  },
-  "peerDependencies": {
-    "@angular/common": "^2.0.0",
-    "@angular/core": "^2.0.0"
   }
 }
